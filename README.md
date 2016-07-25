@@ -1,0 +1,2 @@
+# Tonzo
+An application to help people with anxiety,depression, and other mental health disorders get back on track with their life by offering them a plethora of tools to use. These include a search tool to conenct users with nearby psychologists, counsellors,pharmacies, and mental health clinics, a calendar to take note of when users have taken prescribed medication, a note-taking tool to record accomplishments, and a chatbot to provide motivation and goal-setting help to users.
