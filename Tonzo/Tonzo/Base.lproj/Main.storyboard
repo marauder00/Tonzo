@@ -6,6 +6,14 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+        <array key="Roboto-Thin.ttf">
+            <string>Roboto-Thin</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -25,18 +33,75 @@
                                     <constraint firstAttribute="height" constant="200" id="t16-Za-fl7"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Username Here" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="L3Z-6e-r9d">
+                                <color key="backgroundColor" red="0.95905567669812097" green="1" blue="0.91674760984481929" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="EP5-K5-SvA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67a-U1-dUL">
+                                <color key="backgroundColor" red="0.25818083904974171" green="0.57890215968586389" blue="0.45857143258935534" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="23"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.92687549712160433" green="1" blue="0.90624087351601845" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logIntoApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCn-Lb-luf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tonzo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moD-Kn-jDB">
+                                <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="38"/>
+                                <color key="textColor" red="0.97629006402953489" green="1" blue="0.95097566502756603" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mental Health Therapy on the go!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyP-Rl-M2O">
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="15"/>
+                                <color key="textColor" red="0.970431002484065" green="1" blue="0.9794123502120865" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password Here" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d3I-rg-hKN">
+                                <color key="backgroundColor" red="0.95686274509803926" green="1" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vN7-Se-P1q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="327-Ku-1lf"/>
+                            <constraint firstItem="lyP-Rl-M2O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="48" id="3Zo-mc-zlS"/>
+                            <constraint firstItem="lyP-Rl-M2O" firstAttribute="top" secondItem="moD-Kn-jDB" secondAttribute="bottom" constant="8" id="488-yH-axV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="umh-PJ-hX7" secondAttribute="trailing" constant="72" id="9E9-1v-8yb"/>
+                            <constraint firstItem="L3Z-6e-r9d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="72" id="9bL-33-nYh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="67a-U1-dUL" secondAttribute="trailing" constant="72" id="Ccn-7W-RWA"/>
+                            <constraint firstItem="d3I-rg-hKN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FHd-7n-4wt"/>
+                            <constraint firstItem="67a-U1-dUL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="72" id="FMK-rK-9GB"/>
+                            <constraint firstItem="L3Z-6e-r9d" firstAttribute="top" secondItem="lyP-Rl-M2O" secondAttribute="bottom" constant="37" id="P0l-lR-QcE"/>
+                            <constraint firstItem="67a-U1-dUL" firstAttribute="top" secondItem="d3I-rg-hKN" secondAttribute="bottom" constant="50" id="PJe-Tq-9wG"/>
+                            <constraint firstItem="moD-Kn-jDB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="RuA-WB-kTA"/>
                             <constraint firstItem="vN7-Se-P1q" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="UxS-1l-bZj"/>
                             <constraint firstAttribute="trailing" secondItem="vN7-Se-P1q" secondAttribute="trailing" id="VPD-k8-V66"/>
+                            <constraint firstItem="moD-Kn-jDB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W2o-gI-r4Z"/>
+                            <constraint firstItem="d3I-rg-hKN" firstAttribute="width" secondItem="L3Z-6e-r9d" secondAttribute="width" id="WOW-ef-OI5"/>
+                            <constraint firstItem="lyP-Rl-M2O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YGh-1W-huY"/>
+                            <constraint firstItem="moD-Kn-jDB" firstAttribute="top" secondItem="umh-PJ-hX7" secondAttribute="bottom" constant="8" id="a3t-Hi-POy"/>
                             <constraint firstItem="vN7-Se-P1q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aEu-5Q-4Nc"/>
+                            <constraint firstItem="d3I-rg-hKN" firstAttribute="top" secondItem="L3Z-6e-r9d" secondAttribute="bottom" constant="17" id="bp5-R2-2Mp"/>
+                            <constraint firstItem="d3I-rg-hKN" firstAttribute="height" secondItem="L3Z-6e-r9d" secondAttribute="height" id="czH-vV-jLW"/>
                             <constraint firstItem="umh-PJ-hX7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dl9-iN-qoP"/>
+                            <constraint firstItem="L3Z-6e-r9d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hqi-dU-sv0"/>
+                            <constraint firstItem="67a-U1-dUL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jdv-I1-6fr"/>
                             <constraint firstItem="umh-PJ-hX7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xkH-dV-L5N"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="67a-U1-dUL" secondAttribute="bottom" constant="110" id="ybD-uF-ooE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordDisplay" destination="d3I-rg-hKN" id="XxU-ci-Lvh"/>
+                        <outlet property="userDisplay" destination="L3Z-6e-r9d" id="lMA-Zo-4c7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
